@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(BACKGROUND\ CHALK.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+}
+.banner h2{
+    font-size: 3em;
+    color:#fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3{
+
+    font-size: 1.5em;
+    color:#fff;
+    font-weight: 300;
+    line-height: 1.0em;
+
+}
+.textBox{
+    margin: 0 auto;
+}
+.btn{
+    position: relative;
+    background:#2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background:#fff;
+    padding: 10px 100px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/*header .sticky .nav-brand img{
+    filter: invert(1);
+}*/
+
+ .nav-brand{
+     width: 4rem;
+     margin: 0;
+     padding:0;
+ }
+ 
+ header.sticky .nav-brand{ /* changes the logo color */
+    filter: invert(1);
+ }
+
+header ul{
+    position: relative;
+     display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header.sticky ul li a {
+    color: #111;
+}
+
+/*================================= the about section=====================================*/
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.about .content{
+    margin: 30px;
+}
+ .content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contentBx{
+    padding-right: 30px;
+    padding-left: 20px;
+    line-height: 1.7em;
+}
+.contentBx h3{
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+.w50 img{
+    max-width: 100%;
+
+}
+
+/*--------------------------SERVICES SECTION ---------------------------------------------------------*/
+.services{
+   background:#111;
+}
+.Headingwhite{
+    display: flex;
+    color: #fff;
+  justify-content: center;
+  padding: 30px;
+}
+.Headingwhite h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.services .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesbox{
+    padding:40px 20px;
+    background:#222;
+    color:#fff;
+    max-width: 500px;
+    margin:20px;
+    text-align:center;
+    transition: 0.5s;
+}
+.services .content .servicesbox:hover{
+    background:#2196f3;
+}
+.services .content.servicesbox img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content.servicesbox h2{
+    font-size:20px;
+    font-weight: 600;
+}
+/*---------------------------WORK-----------------------------------------*/
+.work .content
+{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.work .content .workBox{
+    width:50%;
+    padding:20px;
+}
+.work .content .workBox img{
+    max-width: 100%;
+    filter: drop-shadow(16px 16px 15px black);
+    cursor: pointer;
+}
+
+
+/*--------------------------TESTIMONIAL SECTION ---------------------------------------------------------*/
+.Testimonials{
+    background:#f7f7f7;
+}
+.testHeader{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.testHeader h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.Testimonials .content{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Testimonials .content .testimonialBx{
+    max-width:calc(50% - 40px);
+    padding:60px 40px;
+    margin:20px;
+    background:#2196f3;
+}
+.Testimonials .content  .testimonialBx p{
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+.Testimonials .content  .testimonialBx h3{
+    margin-top:40px;
+    text-align: end;
+    color:#fff;
+    font-weight:600;
+    font-size: 20px;
+    line-height: 1em;
+}
+.Testimonials .content  .testimonialBx h3 span{
+    font-size:14px;
+    font-weight: 400;
+}
+/*-------------------------CONTACT US SECTION-----------------------------------*/
+.contact{
+    background: #111;
+
+}
+.contactHeader{
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  padding: 40px;
+}
+.contactHeader h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.contact .content{
+    padding: 50px;
+}
+.formbox{
+    
+    min-width: 60%;
+}
+.formbox form{
+    display: flex;
+    flex-direction: column;
+}
+.formbox form h3,
+.contactInfo h3{
+    color:#fff;
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formbox form input,
+.formbox form textarea{
+    margin-bottom:20px;
+    padding:15px;
+    font-size:16px;
+    border:none;
+    outline:none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formbox form textarea
+{
+min-height: 200px;
+}
+.formbox form input::placeholder,
+.formbox form textarea::placeholder
+{
+    color: #999;
+}
+.formbox form input[type="submit"]
+{
+max-width: 100px;
+background: #2196f3;
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.contactInfo
+{
+    min-width: 40%;
+}
+.contactInfoBox
+{
+    position: relative;
+}
+.contactInfobox .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.contactInfobox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactInfobox .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+
+.contactInfobox .box .text h3
+{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+/*------icons----*/
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+    filter: invert(1);
+}
+.icons .sm{
+    position: relative;
+    display: flex;
+    filter: invert(1);
+
+}
+.icons .sm li{
+    list-style: none;
+    margin-right: 30px;
+    filter: invert(1);
+
+}
+.icons.sm .img{
+    display: inline-block;
+    max-height: 24px;
+    transition: 0.5s ease-in-out;
+    
+}
+.icons .sm li:hover img{
+    transform: translateY(-10px);/*makes the icon animate up */
+}
+.copyright{
+    background: #000;
+    color:#fff;
+    text-align: center;
+    padding:10px;
+}
+/*-------------------------------Responsiveness---------------------------*/
+@media(max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+      padding:20px 50px;
+      z-index: 1000;  
+    }
+    .menu{
+        position: fixed;
+        top:75px;
+        left:-100%;
+        display:block;
+        padding:100px 50px;
+        text-align:center;
+        width:100%;
+        height:100vh;
+        background: #fff;
+        transition:0.5s;
+        z-index:999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active{ /* for fullscreen overlay*/
+        left:0;
+    }
+    header ul li a
+    {
+  color:#111;
+  font-size: 24px;
+   margin: 10px;
+    }
+     
+    .toggle{
+        width:40px;
+        height: 40px;
+        background: url(menu.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url(cancel.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header .toggle{
+        filter: invert(1);
+    }
+    header.sticky .toggle{
+        filter: invert(0);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .contactInfobox .box .text {
+      
+        font-size: 15px;
+    }
+       
+    
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3
+    {
+        font-size: 1em;
+    }
+    .btn
+    {
+        margin-top: 7px;
+        padding:7px 10px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .heading h2
+    {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .contentBx h3
+    {
+        font-size:20px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .w50
+    {
+      margin-bottom: 0px;
+      padding-top: 30px;
+      
+    
+    }
+    .w50 img{
+        margin: 10px;
+    }
+   
+    .services .content.servicesbox
+    {
+        margin: 10px;
+    }
+    .work .content .workBox
+    {
+        width: 100%;
+        padding: 10px;
+    }
+    .work .content .workBox img{
+        filter: drop-shadow(10px 10px 5px black);
+    }
+    .Testimonials .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .Testimonials .content .testimonialBx h3{
+        margin-top: 20px;
+    }
+    .contactInfo{
+        min-width: 40%;
+        margin: 20px 0;
+    }
+    .icons .controls li{
+        filter: invert(0);
+    }
+}
+/*-----------------smaller SCREENS--------------------------*/
+@media (max-width:600px){
+    header,
+    header.sticky
+    {
+      padding:20px 20px;
+        
+    }
+    .heading h2
+    {
+        margin-top: 20px;
+    }
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+    section
+    {
+        padding: 100px 20px;
+    }
+    .services.content
+    {
+        padding:10px;
+    }
+    .w50
+    {
+        margin-bottom: 0;
+        padding-top: 30px;
+        margin: 0;
+        
+    }
+     .work .content .workBox
+    {
+        width: 100%;
+        padding: 5px;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        padding:10px 20px;
+        font-size: 20px;
+    }
+    .icons .controls li img{
+        max-width: 40px;
+    }
+}
